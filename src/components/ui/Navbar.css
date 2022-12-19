@@ -1,0 +1,48 @@
+.Navbar {
+    background-color: #000;
+    color: #fff;
+}
+
+.Navbar-brand {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+    padding: 0 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Navbar-brand:hover {
+    background-color: hsl(0, 60%, 50%);
+}
+
+.Navbar-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.Navbar-list {
+    list-style: none;
+    display: flex;
+}
+
+.Navbar-list-item {
+
+}
+
+.Navbar-link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 2em;
+}
+
+.Navbar-link:hover {
+    background-color: #444;
+}
+
+.Navbar-active {
+    background-color: #444;
+}
