@@ -1,48 +1,52 @@
 .Navbar {
-    background-color: #000;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
 .Navbar-brand {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.25em;
-    padding: 0 1em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 0 1em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .Navbar-brand:hover {
-    background-color: hsl(0, 60%, 50%);
+  background-color: hsl(0, 60%, 50%);
 }
 
-.Navbar-container{
+.Navbar-container {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Navbar-left,
+.Navbar-right { 
+    display: flex;
 }
 
 .Navbar-list {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .Navbar-list-item {
-
 }
 
 .Navbar-link {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 1em 2em;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em 2em;
 }
 
 .Navbar-link:hover {
-    background-color: #444;
+  background-color: #444;
 }
 
 .Navbar-active {
-    background-color: #444;
+  background-color: #444;
 }

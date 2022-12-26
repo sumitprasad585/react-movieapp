@@ -7,6 +7,7 @@ import './Movies.css';
 class Movies extends Component {
     constructor(props) {
         super(props);
+        console.log('constructor');
         this.state = {
             modalActive: false,
             movieFiler: ''
@@ -14,12 +15,14 @@ class Movies extends Component {
     }
 
     componentDidMount() {
+        console.log('componentDidMount');
         const { dispatch, match } = this.props;
         const movieFilter = match.path;
         dispatch(getMovies(movieFilter));
     }
 
     render() {
+        console.log('RENDER');
         const { moviesReducer: {movies} } = this.props;
         return (
             <div className="Movies">

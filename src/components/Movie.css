@@ -1,0 +1,61 @@
+.Movie{
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; 
+    box-shadow: 0 0 1em -0.4em #fff; 
+    transition: transform 500ms linear, box-shadow 500ms linear;
+}
+
+.Movie:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0.3em 1em -0.2em #f00;
+}
+
+.Movie img{
+    width: 100%;
+    height: 80%;
+}
+
+.Movie-brief{
+    height: 20%;
+}
+
+.Movie-brief-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 90%;
+    margin: 1em auto;
+}
+
+.Movie-brief h1, 
+.Movie-brief h2{
+    margin: 0;
+}
+.Movie-brief h1{
+    font-size: 1em;
+}
+.Movie-brief h2{
+    font-size: 0.8em;
+    font-weight: normal; 
+    border-radius: 50px; 
+    padding: 0.25em 0.5em;
+    border: 1px solid #f00;
+}
+
+.Movie-overview{
+    position: absolute; 
+    bottom: 0; 
+    color: #fff;
+    letter-spacing: 0.1em;
+    background-color: #444;
+    padding: 1em;
+    transform: translateY(100%);
+    transition: transform 500ms linear; 
+    font-size: 0.9em; 
+    line-height: 1.5;
+}
+
+.Movie:hover .Movie-overview{
+    transform: translateY(0%);
+}

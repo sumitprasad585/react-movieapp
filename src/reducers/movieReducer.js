@@ -1,4 +1,4 @@
-import { GET_MOVIES_SUCCESS } from "../constants/movieConstants";
+import * as types from "../constants/movieConstants";
 
 const initialState = {
     movieFilter: '',
@@ -8,9 +8,13 @@ const initialState = {
 export default function moviesReducer(state = initialState, action) {
     const data = action.res;
     switch(action.type){
-        case GET_MOVIES_SUCCESS:
+        case types.GET_MOVIES_SUCCESS:
             return {
-                ...state, movies: data.results, ...data
+                ...state, ...data, movies: data.results
+            }
+        case types.SEARCH_MOVIE_SUCCESS:
+            return {
+                ...state, ...data, movies: data.results
             }
         default:
             return state;

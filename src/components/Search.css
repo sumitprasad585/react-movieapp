@@ -1,0 +1,16 @@
+.Search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Search-form input {
+    padding: 0.5em 1em;
+    border-style: none;
+    border-radius: 5px;
+}
+
+@media screen(min-width: 2000px) {
+
+}
